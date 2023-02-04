@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css_styles/styles.css">
+  <title>Ing. Daniel Macias Desarrollo Web</title>
+</head>
+
+<body>
+  <!-- HOME SECTION -->
+  <section id="home">
+    <div class="container">
+      <header>
+        <div class="container-header">
+          <h1>Ing. Daniel Macias</h1>
+          <nav id="nav" class="">
+            <ul id="links">
+              <li><a href="#home" class="selected" onclick="seleccionar(this)">HOME</a></li>
+              <li><a href="#about" onclick="seleccionar(this)">ABOUT</a></li>
+              <li><a href="#skills" onclick="seleccionar(this)">SKILLS</a></li>
+              <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+              <li><a href="#contact" onclick="seleccionar(this)">CONTACT</a></li>
+            </ul>
+          </nav>
+
+          <div id="icon-nav" onclick="responsiveMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+
+          <div class="redes">
+            <a href="https://www.linkedin.com/in/ing-daniel-macias/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/MaciasDaniel"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+      </header>
+      <div class="presentation">
+        <p class="welcome">Welcome</p>
+        <h2>I am <span>Daniel Macias</span>, Web Developer</h2>
+        <p class="description">
+          I'm a back-end developer and I'm currently learning front-end development.
+          This is my first web page programmed with HTML, CSS and JavaScript</p>
+        <a href="#portfolio">Go to Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="container-photo">
+      <img src="images/photo.png" alt="">
+    </div>
+    <div class="about">
+      <p class="title-section">About</p>
+      <h2>Hello, I'm <span>Daniel Macias</span></h2>
+      <h3>Web Developer</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quia sint expedita iure ipsam ratione in totam quam nihil blanditiis iste voluptatibus
+        officiis dolore, exercitationem architecto praesentium eveniet
+        laboriosam. Recusandae, assumenda.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <a href="#">Descargar CV</a>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <br>
+    <div class="skills-container section-border">
+      
+      <div class="skills-content">
+        <h3 class="skills-title">
+          <i class="fa-solid fa-code"> Front-end </i>
+        </h3>
+
+        <div class="skills-info">
+          <div class="skills-data">
+            <div class="skills-blob">
+              <img src="images/html.png" alt="skills image">
+            </div>
+
+            <h3 class="skills-name">HTML</h3>
+            <span class="skills-subtitle">Basic</span>
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-blob">
+              <img src="images/css.png" alt="skills image">
+            </div>
+
+            <h3 class="skills-name">CSS</h3>
+            <span class="skills-subtitle">Basic</span>
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-blob">
+              <img src="images/javascript.png" alt="skills image">
+            </div>
+
+            <h3 class="skills-name">JavaScript</h3>
+            <span class="skills-subtitle">Basic</span>
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-blob">
+              <img src="images/react.png" alt="skills image">
+            </div>
+
+            <h3 class="skills-name">React</h3>
+            <span class="skills-subtitle">Basic</span>
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-blob">
+              <img src="images/git.png" alt="skills image">
+            </div>
+
+            <h3 class="skills-name">Git</h3>
+            <span class="skills-subtitle">Intermediate</span>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="skills-content">
+        <h3 class="skills-title">
+          <i class="fa-solid fa-code"> Back-end </i>
+        </h3>
+
+        <div class="skills-info">
+          <div class="skills-data">
+            <div class="skills-blob">
+              <img src="images/java.png" alt="skills image">
+            </div>
+
+            <h3 class="skills-name">Java</h3>
+            <span class="skills-subtitle">Intermediate</span>
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-blob">
+              <img src="images/spring.png" alt="skills image">
+            </div>
+
+            <h3 class="skills-name">SpringBoot</h3>
+            <span class="skills-subtitle">Intermediate</span>
+          </div>
+
+          <div class="skills-data">
+            <div class="skills-blob">
+              <img src="images/mysql.png" alt="skills image">
+            </div>
+
+            <h3 class="skills-name">MySQL</h3>
+            <span class="skills-subtitle">Intermediate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- END SKILLS SECTION -->
+  
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio">
+    <h3 class="title-section">MY PROJECTS</h3>
+    <br>
+    <div class="file">
+      <div class="project">
+        <div class="overlay"></div>
+        <img src="images/picture3.png" alt="">
+        <div class="info">
+          <h4>Project Description</h4>
+          <p>Web Site</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay"></div>
+        <img src="images/picture4.png" alt="">
+        <div class="info">
+          <h4>Project Description</h4>
+          <p>Web Site</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay"></div>
+        <img src="images/picture2.png" alt="">
+        <div class="info">
+          <h4>Project Description</h4>
+          <p>Web Site</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay"></div>
+        <img src="images/picture1.png" alt="">
+        <div class="info">
+          <h4>Project Description</h4>
+          <p>Web Site</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay"></div>
+        <img src="images/picture5.png" alt="">
+        <div class="info">
+          <h4>Project Description</h4>
+          <p>Web Site</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay"></div>
+        <img src="images/picture6.png" alt="">
+        <div class="info">
+          <h4>Project Description</h4>
+          <p>Web Site</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay"></div>
+        <img src="images/picture9.png" alt="">
+        <div class="info">
+          <h4>Project Description</h4>
+          <p>Web Site</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="overlay"></div>
+        <img src="images/picture8.png" alt="">
+        <div class="info">
+          <h4>Project Description</h4>
+          <p>Web Site</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h3 class="title-section">Contact Me</h3>
+    <div class="container-form">
+      <form action="">
+        <div class="file mid">
+          <input type="text" placeholder="Name" class="input-mid">
+          <input type="text" placeholder="Email" class="input-mid">
+        </div>
+        <div class="file">
+          <input type="text" placeholder="Subject" class="input-full">
+        </div>
+        <div class="file">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="input-full"></textarea>
+        </div>
+
+        <input type="submit" value="Send Message" class="btn-send">
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <p>Copyright 2023</p>
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/ing-daniel-macias/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/MaciasDaniel"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
