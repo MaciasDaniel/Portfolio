@@ -12,7 +12,7 @@ function seleccionar(link) {
     var x = document.getElementById("nav");
     x.className = "";
 }
-//Funcion para mostrar el menu responsive
+
 function responsiveMenu() {
     var x = document.getElementById("nav");
     if(x.className === "") {
@@ -21,3 +21,28 @@ function responsiveMenu() {
         x.className = "";
     }
 }
+
+const form = getElementById('form');
+
+async function handleSendEmail(event) {
+    event.preventDefault();
+
+    const fd = new FormData(this);
+
+    const response = await fetch('https://formspree.io/f/xzblvdgw', {
+        method: 'POST',
+        body: fd,
+        headers: {
+            Accept: 'aplication/json'
+        }
+    });
+
+    if (response.ok) {
+        this.reset();
+        alert('Mensaje enviado');
+    } else {
+        alert('Error al enviar el mensaje');
+    }
+}
+
+form.addEventListener('submit', handleSendEmail);

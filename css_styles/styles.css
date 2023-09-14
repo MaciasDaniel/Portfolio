@@ -99,7 +99,10 @@ html {
 
 #home .container .presentation h2 span {
     font-size: 53px;
-    color: aqua;
+    background: #11E3FA;
+    background: linear-gradient(to right, #11E3FA 0%, #BD16F0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #home .container .presentation .description {
@@ -140,16 +143,11 @@ html {
     display: flex;
 }
 
-#about .container-photo {
-    max-width: 400px;
-    margin-right: 80px;
-}
-
 #about .container-photo img {
-    padding: 20px;
-    width: 100%;
+    padding: 10px;
+    width: 300px;
     border-radius: 20px;
-    background-color: #7dedff;
+    background-image: radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
 }
 
 #about .about {
@@ -173,7 +171,10 @@ html {
 }
 
 #about .about h2 span {
-    color: rgb(8, 115, 176);
+    background: #11E3FA;
+    background: linear-gradient(to right, #11E3FA 0%, #BD16F0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #about .about h3 {
@@ -203,7 +204,7 @@ html {
 }
 
 #about .about a:hover {
-    background-color: #D61C4E;
+    background-color: #ec2020;
     color: #fff;
 }
 
@@ -429,7 +430,7 @@ html {
 }
 
 #contact .btn-send:hover {
-    background-color: rgb(8, 115, 176);
+    background-color: #fdc62d;
     color: #fff;
 }
 
@@ -490,17 +491,14 @@ footer a {
     /* ABOUT */
 
     #about {
-        padding: 50px 0;
+        padding: 50px, 0;
         display: block;
     }
 
-    #about .container-photo {
-        padding: 70px;
-        margin: auto;
-    }
-
     #about .container-photo img {
-        padding: 8px;
+        margin-left: 180px;
+        margin-bottom: 20px;
+        padding: 10px;
     }
 
     #about .about .title-section {
@@ -510,6 +508,10 @@ footer a {
     #about .about h2 {
         font-size: 25px;
         text-align: center;
+    }
+
+    #about .about a {
+        margin-left: 230px;
     }
 
     /* PORTFOLIO */
@@ -529,6 +531,10 @@ footer a {
     /* CONTACT */
     #contact {
         padding: 50px 15px;
+    }
+
+    #contact .container-form {
+        background-color: #fff;
     }
 
     #contact .container-form .mid {

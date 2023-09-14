@@ -9,17 +9,18 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/css_styles/styles.css">
-  <title>Ing. Daniel Macias Desarrollo Web</title>
+  <script src="js/scrollreveal.js"></script>
+  <title>Portfolio Daniel Macias</title>
 </head>
 
 <body>
   <!-- HOME SECTION -->
   <section id="home">
-    <div class="container">
+    <div class="container navbar">
       <header>
         <div class="container-header">
-          <h1>Ing. Daniel Macias</h1>
-          <nav id="nav" class="">
+          <h1 class="logo">Daniel Macias</h1>
+          <nav id="nav">
             <ul id="links">
               <li><a href="#home" class="selected" onclick="seleccionar(this)">HOME</a></li>
               <li><a href="#about" onclick="seleccionar(this)">ABOUT</a></li>
@@ -34,17 +35,17 @@
           </div>
 
           <div class="redes">
-            <a href="https://www.linkedin.com/in/ing-daniel-macias/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-alejandro-macias" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/MaciasDaniel" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href="#"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
       </header>
-      <div class="presentation">
+      <div class="presentation scroll-banner">
         <p class="welcome">Welcome</p>
-        <h2>I am <span>Daniel Macias</span>, Web Developer</h2>
+        <h2>I am <span>Daniel Macias</span>, web developer</h2>
         <p class="description">
-          I'm a back-end developer and I'm currently learning front-end development.
+          I'm a Java back-end developer and i'm currently learning front-end development.
           This is my first web page programmed with HTML, CSS and JavaScript</p>
         <a href="#portfolio">Go to Portfolio</a>
       </div>
@@ -53,19 +54,21 @@
 
   <!-- ABOUT SECTION -->
   <section id="about">
-    <div class="container-photo">
+    <div class="container-photo scroll-about">
       <img src="images/photo.png" alt="">
     </div>
-    <div class="about">
+    <div class="about scroll-about">
       <p class="title-section">About</p>
       <h2>Hello, I'm <span>Daniel Macias</span></h2>
-      <h3>Web Developer</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Quia sint expedita iure ipsam ratione in totam quam nihil blanditiis iste voluptatibus
-        officiis dolore, exercitationem architecto praesentium eveniet
-        laboriosam. Recusandae, assumenda.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <a href="CV_Daniel-Macias.pdf" download="CV_Daniel-Macias">Descargar CV</a>
+      <h3>Java Backend Developer</h3>
+      <p>I specialize in both front-end and back-end development so I can approach projects from all angles and ensure an exceptional user experience.
+        I´m always looking to learn and keep up to date with the latest trends and technological advances.
+      </p>
+      <br>
+      <p>My goal is to create web solutions that not only meet the client's objectives but also leave a lasting good impression on end users.
+        I´m always willing to face new challenges and take ideas to the next level. <br>Let's talk and start creating something amazing together!
+      </p>
+      <a href="CV_DanielMacias.pdf" download="CV_DanielMacias">Download CV</a>
     </div>
   </section>
 
@@ -75,7 +78,7 @@
     <br>
     <div class="skills-container section-border">
       
-      <div class="skills-content">
+      <div class="skills-content scroll-skills-frontend">
         <h3 class="skills-title">
           <i class="fa-solid fa-code"> Front-end </i>
         </h3>
@@ -128,7 +131,7 @@
         </div>
       </div>
       <br>
-      <div class="skills-content">
+      <div class="skills-content scroll-skills-backend">
         <h3 class="skills-title">
           <i class="fa-solid fa-code"> Back-end </i>
         </h3>
@@ -160,6 +163,15 @@
             <h3 class="skills-name">MySQL</h3>
             <span class="skills-subtitle">Intermediate</span>
           </div>
+
+          <div class="skills-data">
+            <div class="skills-blob">
+              <img src="images/mongodb.png" alt="skills image">
+            </div>
+
+            <h3 class="skills-name">MongoDB</h3>
+            <span class="skills-subtitle">Intermediate</span>
+          </div>
         </div>
       </div>
     </div>
@@ -169,7 +181,7 @@
   <section id="portfolio">
     <h3 class="title-section">MY PROJECTS</h3>
     <br>
-    <div class="file">
+    <div class="file scroll-portfolio">
       <div class="project">
         <div class="overlay"></div>
         <img src="images/picture3.png" alt="">
@@ -240,19 +252,18 @@
   <!-- CONTACT SECTION -->
   <section id="contact">
     <h3 class="title-section">Contact Me</h3>
-    <div class="container-form">
-      <form action="">
+    <div class="container-form scroll-contact">
+      <form id="form" action="https://formspree.io/f/xzblvdgw" method="POST">
         <div class="file mid">
-          <input type="text" placeholder="Name" class="input-mid">
-          <input type="text" placeholder="Email" class="input-mid">
+          <input type="text" name="name" placeholder="Name" class="input-mid">
+          <input type="text" name="email" placeholder="Email" class="input-mid">
         </div>
         <div class="file">
-          <input type="text" placeholder="Subject" class="input-full">
+          <input type="text" name="subject" placeholder="Subject" class="input-full">
         </div>
         <div class="file">
-          <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="input-full"></textarea>
+          <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="input-full"></textarea>
         </div>
-
         <input type="submit" value="Send Message" class="btn-send">
       </form>
     </div>
@@ -262,13 +273,14 @@
   <footer>
     <p>Copyright 2023</p>
     <div class="redes">
-      <a href="https://www.linkedin.com/in/ing-daniel-macias/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/daniel-alejandro-macias" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       <a href="https://github.com/MaciasDaniel" target="_blank"><i class="fa-brands fa-github"></i></a>
       <a href="#"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
