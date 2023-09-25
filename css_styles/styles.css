@@ -243,56 +243,24 @@ html {
     margin-bottom: 2.5rem;
 }
 
-.skills-title i {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
 .skills-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
 }
 
-.skills-data {
-    justify-self: center;
+.skills-data, .skills-data img {
+    height: 60px;
+    width: 60px;
 }
 
-.skills-blob {
-    display: grid;
-    width: 70px;
-    height: 70px;
-    background-color: #d2d2d2;
-    border-radius: 3rem;
-    place-items: center;
-    margin-bottom: 1rem;
-}
-
-.skills-blob img {
-    display: grid;
-    grid-area: auto;
-    width: 50px;
-    border-radius: 10px;
-}
-
-.skills-name {
-    font-size: 1rem;
-    width: fit-content;
-    height: 20px;
-    color: #fff;
-    margin-bottom: .25rem;
-}
-
-.skills-subtitle {
-    font-size: bold;
-    width: 70px;
-    height: 0;
-    margin: 0;
-    color: #d2d2d2;
+.skills-data img {
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
 }
 
 /* ANIMATION SKILLS */
-.skills-blob:hover img {
+.skills-data:hover i, .skills-data:hover img {
     animation: bounce-skills .6s;
 }
 
