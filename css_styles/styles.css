@@ -243,20 +243,36 @@ html {
     margin-bottom: 2.5rem;
 }
 
+.skills-title-backend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: aqua;
+}
+
 .skills-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.skills-data, .skills-data img {
+.skills-data {
     height: 60px;
     width: 60px;
 }
 
 .skills-data img {
-    border-radius: 50px;
-    height: 60px;
-    width: 60px;
+    margin-top: 20px;
+    width: 80px;
+    height: 50px;
+    object-fit: contain;
+    max-inline-size: fit-content;
+}
+
+.skills-data .mysql {
+    margin-left: 30px;
 }
 
 /* ANIMATION SKILLS */
