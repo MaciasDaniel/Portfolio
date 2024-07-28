@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/css_styles/styles.css">
+  <link rel="stylesheet" href="../Portfolio/css_styles/styles.css">
   <script src="js/scrollreveal.js"></script>
   <title>Portfolio Daniel Macias</title>
 </head>
@@ -46,8 +46,8 @@
         <p class="welcome">Welcome</p>
         <h2>I am <span>Daniel Macias</span>, web developer</h2>
         <p class="description">
-          I'm a Java back-end developer and i'm currently learning front-end development.
-          This is my first web page programmed with JavaScript, HTML and CSS</p>
+          I'm a Full-Stack developer and I'm currently learning AWS. </br>
+          This portfolio was made with JavaScript, HTML and CSS.</p>      
         <a href="#portfolio">Go to Portfolio</a>
       </div>
     </div>
@@ -142,30 +142,34 @@
     <br>
     <div class="file scroll-portfolio">
       <div class="project">
-        <a href="https://github.com/MaciasDaniel/CRUD-MVC-con-login-y-paginacion/tree/main/controlempleados" target="_blank">
+        <a href="https://github.com/MaciasDaniel/Microservicios" target="_blank">
+        <img src="images/microservices.png" alt="microservices">
+        <div class="info">
+          <h4>Microservices with Spring Cloud</h4>
+        </div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://github.com/MaciasDaniel/CRUD-MVC-con-login-y-paginacion" target="_blank">
           <img src="images/dashboard.png" alt="dashboard">
           <div class="info">
-            <h4>Dashboard made with Spring Framework</h4>
-            <p>CRUD with pagination and login with Spring Security (roles: admin and user), Spring MVC with
-              thymeleaf and bootstrap and reports to download in PDF and Excel.</p>
+            <h4>Dashboard with Spring Framework</h4>
           </div>
         </a>
       </div>
       <div class="project">
-        <a href="https://github.com/MaciasDaniel/To-Do-List" target="_blank">
-          <img src="images/to-do-list.png" alt="todo-list">
+        <a href="https://github.com/MaciasDaniel/Aplicacion-de-inventario" target="_blank">
+          <img src="images/jpa.png" alt="contador-clicks">
           <div class="info">
-            <h4>To-Do List</h4>
-            <p>To-do list made with React.js</p>
+            <h4>Inventory application with Spring Boot MVC and unit testing with JUnit5</h4>
           </div>
         </a>
       </div>
       <div class="project">
-        <a href="https://github.com/MaciasDaniel/Contador-de-clicks-en-React" target="_blank">
-          <img src="images/contador-clicks.png" alt="contador-clicks">
+        <a href="https://github.com/MaciasDaniel/Pruebas-unitarias-con-Mockito" target="_blank">
+          <img src="images/mockito.png" alt="contador-clicks">
           <div class="info">
-            <h4>Click counter</h4>
-            <p>Click counter made with React.js</p>
+            <h4>Integration and unit tests with Mockito and JUnit5</h4>
           </div>
         </a>
       </div>
@@ -173,8 +177,15 @@
         <a href="https://github.com/MaciasDaniel/Aplicacion-fullstack" target="_blank">
           <img src="images/dashboard-react.png" alt="dashboard-react">
           <div class="info">
-            <h4>Dashboard made with React.js</h4>
-            <p>Full stack application (Spring Boot and React.js) for user registration, editing and deletion.</p>
+            <h4>FullStack Dashboard with Spring Boot and React.js</h4>
+          </div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://github.com/MaciasDaniel/To-Do-List" target="_blank">
+          <img src="images/to-do-list.png" alt="todo-list">
+          <div class="info">
+            <h4>To-Do List with React.js</h4>
           </div>
         </a>
       </div>
@@ -182,31 +193,23 @@
         <a href="https://github.com/MaciasDaniel/tic-tac-toe-game" target="_blank">
           <img src="images/tic-tac-toe.png" alt="tic-tac-toe-game">
           <div class="info">
-            <h4>Tic-tac-toe game</h4>
-            <p>Tic-tac-toe game made with React.js</p>
+            <h4>Tic-tac-toe game with React.js</h4>
           </div>
         </a>
       </div>
       <div class="project">
-        <img src="images/picture2.png" alt="">
-        <div class="info">
-          <h4>Project Description</h4>
-          <p>Web Site</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="images/picture3.png" alt="">
-        <div class="info">
-          <h4>Project Description</h4>
-          <p>Web Site</p>
-        </div>
-      </div>
-      <div class="project">
-        <a>
-          <img src="images/picture4.png" alt="">
+        <a href="https://github.com/MaciasDaniel/CRUD-con-Spring-Boot-y-Docker" target="_blank">
+          <img src="images/docker.webp" alt="contador-clicks">
           <div class="info">
-            <h4>Project Description</h4>
-            <p>Web Site</p>
+            <h4>CRUD con Spring Boot y Docker</h4>
+          </div>
+        </a>
+      </div>
+      <div class="project">
+        <a href="https://github.com/MaciasDaniel/Contador-de-clicks-en-React" target="_blank">
+          <img src="images/contador-clicks.png" alt="contador-clicks">
+          <div class="info">
+            <h4>Click counter with React.js</h4>
           </div>
         </a>
       </div>
@@ -235,7 +238,7 @@
 
   <!-- FOOTER SECTION -->
   <footer>
-    <p>Copyright 2023</p>
+    <p>&copy; Copyright <span id="copyright-year"></span></p>
     <div class="redes">
       <a href="https://www.linkedin.com/in/daniel-alejandro-macias" target="_blank"><i
           class="fa-brands fa-linkedin"></i></a>
@@ -246,6 +249,6 @@
 
   <script src="js/script.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/copyrightDate.js"></script>
 </body>
-
 </html>
