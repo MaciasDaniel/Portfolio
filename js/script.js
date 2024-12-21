@@ -1,4 +1,3 @@
-//Funcion para aplicar el estilo a la opcion seleccionada en menu y quita la anterior seleccionada.
 function seleccionar(link) {
     var opciones = document.querySelectorAll("#links a");
     opciones[0].className = "";
@@ -8,7 +7,6 @@ function seleccionar(link) {
     opciones[4].className = "";
     link.className = "selected";
 
-    //Hacemos desaparecer el menu una vez que se ha seleccionado una opcion en el modo responsive
     var x = document.getElementById("nav");
     x.className = "";
 }
