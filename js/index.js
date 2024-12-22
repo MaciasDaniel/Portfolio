@@ -27,15 +27,15 @@ sr.reveal('.scroll-about', {
 });
 
 sr.reveal('.scroll-skills-frontend', {
-    duration: 3000,
+    duration: 1500,
     origin: 'left',
-    distance: '100%'
+    distance: '24%'
 });
 
 sr.reveal('.scroll-skills-backend', {
-    duration: 3000,
+    duration: 1500,
     origin: 'right',
-    distance: '100%'
+    distance: '24%'
 });
 
 sr.reveal('.scroll-portfolio', {
@@ -45,7 +45,7 @@ sr.reveal('.scroll-portfolio', {
 });
 
 sr.reveal('.scroll-contact', {
-    duration: 1000,
+    duration: 1200,
     origin: 'bottom',
     distance: '200px'
 });
